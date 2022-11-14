@@ -10,10 +10,7 @@ const assertEqual = (actual, expected) => {
   return response;
 };
 
-const head = (inputArray) => {
-
-  return inputArray[0];
-};
+const head = (inputArray) => inputArray[0];
 
 
 
