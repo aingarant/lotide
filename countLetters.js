@@ -14,14 +14,13 @@ const countLetters = (stringToCount) => {
   let result = {};
 
   for (let letter of stringToCount) {
-    if (result[letter]) {
-      result[letter]++;
-    } else {
-      result[letter] = 1;
+    if (letter !== " ") {
+      (result[letter]) ? result[letter]++ : result[letter] = 1;
     }
+
   }
 
   return result;
 };
 
-console.log(countLetters("Aingaran hates snow...Is it summer yet?"));
+console.log(countLetters("lighthouse in the house"));

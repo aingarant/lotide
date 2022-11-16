@@ -26,14 +26,8 @@ const countOnly = (allItems, itemsToCount) => {
   let countResult = {};
 
   for (let item of allItems) {
-    // console.log(item);
-
     if (itemsToCount[item]) {
-      if (countResult[item]) {
-        countResult[item]++;
-      } else {
-        countResult[item] = 1;
-      }
+      (countResult[item]) ? countResult[item]++ : countResult[item] = 1;
     }
   }
   return countResult;
