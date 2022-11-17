@@ -5,30 +5,10 @@ const eqObjects = (object1, object2) => {
 
   for (let key in object1) {
     if (Array.isArray(object1[key]) || Array.isArray(object2[key])) {
-      // if (!eqArrays(object1[key], object2[key])) return false;
       return (eqArrays(object1[key], object2[key])) ? true : false;
     }
-
     if (object1[key] !== object2[key]) return false;
   }
   return true;
 };
 module.exports = eqObjects;
-
-
-
-
-// // const ab = { a: "1", b: "2" };
-// // const ba = { b: "2", a: "1" };
-// // console.log(eqObjects(ab, ba))
-
-// // const abc = { a: "1", b: "2", c: "3" }; // => false
-// // console.log(eqObjects(ab, abc))
-
-// const cd = { c: "1", d: ["2", 3] };
-// const dc = { d: ["2", 3], c: "1" };
-
-// console.log(eqObjects(cd, dc));
-
-// const cd2 = { c: "1", d: ["2", 3, 4] };
-// console.log(eqObjects(cd, cd2));
