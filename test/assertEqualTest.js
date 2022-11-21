@@ -1,5 +1,7 @@
-const assertEqual = (actual, expected) => {
-  return (actual === expected) ? `✅✅✅ Assertion Passed: ${actual} === ${expected}` : `🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`;
-};
+const assertEqual = require("../assertEqual");
 
-module.exports = assertEqual;
+const assertEqualTest = (actual, expected) => {
+  assertEqual(actual, expected)
+}
+
+module.exports = assertEqualTest;
