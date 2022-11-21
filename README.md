@@ -29,5 +29,11 @@ The following functions are currently implemented:
 * `head`: Accepts and array and returns the first element of the array
 * `middle`: Accepts an array as input and returns the middle element(s)
 * `tail`: Accepts an array as input and returns a new array with the first element removed
+* `countOnly`: Accepts an array as input and returns an object with a count of each element of the array
+* `flatten`: Accepts an array as input and returns flattened into a single array.
+* `letterPositions`: Accepts a string returns an object and returns each letter as a key and the index 
+* `findKeyByValue`: Accepts ab object and returns the first key that matches a given value.
+* `eqObjects`: Compares two objects and returns true if equal, or false.
+* `eqArray`: Compares two arrays and returns true if equal, or false.
 
 Instruction
